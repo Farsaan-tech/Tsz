@@ -40,40 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     light.position.set(5, 5, 5);
     scene.add(light);
 
-    // Load CCTV model
-    const loader = new THREE.GLTFLoader();
-    loader.load('cctv_camera.gltf', function(gltf) {
-        const cameraModel = gltf.scene;
-        scene.add(cameraModel);
-        
-        // Scale and position the model
-        cameraModel.scale.set(0.5, 0.5, 0.5);
-        cameraModel.position.set(0, 0, -3);
-
-        // Animate the camera model
-        gsap.fromTo(cameraModel.rotation, { y: 0 }, { y: Math.PI * 2, duration: 10, repeat: -1 });
-    }, undefined, function(error) {
-        console.error(error);
-    });
-
-    camera.position.z = 5;
-
-    function animate() {
-        requestAnimationFrame(animate);
-        renderer.render(scene, camera);
-    }
-    // Modal functionality
-window.openModal = function(src) {
-    const modal = document.getElementById("myModal");
-    const modalImg = document.getElementById("img01");
-    modal.style.display = "block";
-    modalImg.src = src;
-}
-
-window.closeModal = function() {
-    const modal = document.getElementById("myModal");
-    modal.style.display = "none";
-}
+   
     animate();
 
     window.addEventListener('resize', function() {
