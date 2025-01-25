@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px;
+}
+
+.catalog-section,
+.services-section,
+.gallery-section,
+.testimonials-section,
+.faq-section,
+.contact-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.catalog-item {
+    margin: 15px;
+    text-align: center;
+    width: 220px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.catalog-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.catalog-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.services-section ul {
+    padding-left: 20px;
+}
+
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-container img {
+    width: 220px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+.faq-container {
+    margin: 20px 0;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.faq-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section {
+    position: relative;
+}
+
+.robot-container {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.robot {
+    width: 80px; /* Adjust size as needed */
+    animation: float 2s infinite ease-in-out;
+}
+
+.message-box {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ffd700;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ffcc00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#threejs-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Make sure the 3D canvas is behind other elements */
+}
