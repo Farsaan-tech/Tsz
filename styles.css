@@ -96,13 +96,13 @@ main {
 }
 
 .product-links {
-    color: yellow; /* Link color (blue) */
+    color: #ff751a; /* Link color (orange) */
     text-decoration: none; /* Removes underline */
     font-size: 14px;
 }
 
 .product-links:hover {
-    color: red; /* Darker blue on hover */
+    color: #e65c00; /* Darker blue on hover */
     text-decoration: underline; /* Underline on hover */
 }
 
