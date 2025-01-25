@@ -8,15 +8,10 @@ body {
     position: relative;
 }
 
-.logo {
-    font-size: 2.5em;
-    font-weight: bold;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 10px;
-    animation: bounce 1s infinite alternate;
+.bouncing-image  
+{ width: 150px; /* Adjust the size of the image */ 
+ height: auto; 
+animation: bounce 1s infinite alternate;
 }
 
 @keyframes bounce {
