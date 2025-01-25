@@ -62,21 +62,6 @@ document.addEventListener("DOMContentLoaded", function() {
         requestAnimationFrame(animate);
         renderer.render(scene, camera);
     }
-    function opendModal(imageSrc) {
-    let modal = document.createElement("div");
-    modal.classList.add("modal");
-    
-    let modalImg = document.createElement("img");
-    modalImg.src = imageSrc;
-
-    modal.appendChild(modalImg);
-    document.body.appendChild(modal);
-
-    modal.addEventListener("click", function() {
-        document.body.removeChild(modal);
-    });
-}
-
     animate();
 
     window.addEventListener('resize', function() {
