@@ -14,7 +14,7 @@ body {
     border: 5px solid transparent; /* Add space for the border */
     border-image: linear-gradient(to bottom, #000000, #434343); /* Gradient border */
     border-image-slice: 1; /* Ensures the gradient fills the border */
-    animation: bounce 2s infinite alternate;
+    animation: bounce 3s infinite alternate;
 }
 
 @keyframes bounce {
