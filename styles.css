@@ -96,7 +96,7 @@ main {
 }
 
 .product-links {
-    color: #ff751a; /* Link color (orange) */
+    color: yellow; /* Link color (orange) */
     text-decoration: none; /* Removes underline */
     font-size: 14px;
 }
