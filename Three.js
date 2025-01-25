@@ -62,6 +62,18 @@ document.addEventListener("DOMContentLoaded", function() {
         requestAnimationFrame(animate);
         renderer.render(scene, camera);
     }
+    // Modal functionality
+window.openModal = function(src) {
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("img01");
+    modal.style.display = "block";
+    modalImg.src = src;
+}
+
+window.closeModal = function() {
+    const modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
     animate();
 
     window.addEventListener('resize', function() {
