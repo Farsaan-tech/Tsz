@@ -39,7 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const light = new THREE.DirectionalLight(0xffffff, 1);
     light.position.set(5, 5, 5);
     scene.add(light);
-
+// Example: Log a message when the WhatsApp button is clicked
+document.querySelector('.whatsapp-button a').addEventListener('click', function () {
+    console.log('WhatsApp button clicked!');
+});
     // Load CCTV model
     const loader = new THREE.GLTFLoader();
     loader.load('cctv_camera.gltf', function(gltf) {
